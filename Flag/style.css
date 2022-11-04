@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    background-color: #053a3d;
+    animation: changeBg 5s infinite alternate linear;
+}
+.container{
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#flag{
+    margin: 50px;
+    width: 300px;
+    height: 200px;
+}
+.flag_img{
+    position: relative;
+    background-image: url("flag_img");
+    background-size: 300px 100%;
+    width: 1px;
+    height: 100%;
+    display: inline-block;
+    animation: wave 20s ease-in-out infinite alternate;
+}
+@keyframes changeBg{
+    0%{background: #ee6055;}
+    25%{background: #60d394;}
+    50%{background:#aaf683;}
+    75%{background: #ffd97d;}
+    100%{background: #ff9b85;}
+}
+@keyframes wave {
+    0% {
+        top: 5%;
+    }
+    100% {
+        top: -5%;
+    }
+}
+/*#progress{
+    background-color: #FFDD00;
+    height: 3px;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+h4{
+    width: 60%;
+    margin: auto;
+    margin-top: 5%;
+    color: white;
+}*/
